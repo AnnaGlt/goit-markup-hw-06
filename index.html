@@ -395,6 +395,7 @@
               >
             </address>
           </div>
+
           <div class="footer-add">
             <h3 class="add">присоединяйтесь</h3>
             <ul class="list ico-team-list">
@@ -428,6 +429,26 @@
               </li>
             </ul>
           </div>
+
+          <div class="footer-follow">
+            <h3 class="add">Подпишитесь на рассылку</h3>
+            <form action="" name="add-to-us" autocomplete="on">
+              <label>
+                <input
+                  class="add-to-us"
+                  type="email"
+                  name="user-email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="button footer-button" type="submit">
+                Подписаться
+                <svg width="24" height="24" class="add-button">
+                  <use href="./symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -436,10 +457,77 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close aria-label="выйти" class="exit" tipe="button">
-          <svg width="11" height="11" class="">
+          <svg width="11" height="11" class="exit-modal">
             <use href="./symbol-defs.svg#icon-exit"></use>
           </svg>
         </button>
+        <form class="sign-up-form" action="">
+          <strong class="modal-form-name"
+            >Оставьте свои данные, мы вам перезвоним</strong
+          >
+          <div class="form-field">
+            <label class="label-form" for="name">Имя</label>
+            <input
+              class="input"
+              type="text"
+              name="name"
+              id="name"
+              minlength="4"
+              required
+              autofocus
+            />
+            <svg width="12" height="12" class="icon">
+              <use href="./symbol-defs.svg#icon-user"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="label-form" for="tel">Телефон</label>
+            <input class="input" type="tel" name="tel" id="tel" required />
+            <svg width="13" height="13" class="icon">
+              <use href="./symbol-defs.svg#icon-tel"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="label-form" for="mail">Почта</label>
+            <input class="input" type="email" name="mail" id="mail" required />
+            <svg width="15" height="12" class="icon">
+              <use href="./symbol-defs.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="label-form" for="comment">Комментарий</label>
+            <textarea
+              class="textarea"
+              id="comment"
+              name="text"
+              cols=""
+              rows=""
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-div">
+            <label class="form-checkbox" for="checkbox">
+              <input
+                class="visually-hidden agree"
+                id="checkbox"
+                type="checkbox"
+                required
+              />
+              <span class="icon-agree">
+                <svg width="16" height="15" class="icon-agree-svg">
+                  <use href="./symbol-defs.svg#icon-agree"></use>
+                </svg>
+              </span>
+              <span class="agree-text"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="terms">Условия договора</a></span
+              >
+            </label>
+          </div>
+          <button class="button button-modal-send" type="submit">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
 
