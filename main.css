@@ -277,6 +277,7 @@ address {
 .add-button {
     content: "";
     background-size: contain;
+    margin-left: 10px;
     fill: #FFFFFF;
 }
 
